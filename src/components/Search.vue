@@ -7,7 +7,7 @@
       <input
         name="search"
         type="text"
-        placeholder="Enter a Pokemon or Pokedex ID"
+        placeholder="Enter a Pokémon or Pokédex ID"
         v-model="query"
         style="width: 40vw;"
       />

@@ -2,7 +2,7 @@
   <div class="pokemon border border-dark rounded mb-4">
     <h5>Name: {{pokemon.name.toUpperCase()}}</h5>
     <img :src="pokemon.sprites.front_default" alt="Sprite unvailable" />
-    <h3>Pokedex Number: {{pokemon.id}}</h3>
+    <h3>Pokédex Number: {{pokemon.id}}</h3>
     <div class="row">
       <div class="col-12">
         <h5>TYPES:</h5>
@@ -39,6 +39,6 @@ export default {
 
 <style scoped>
 img {
-  height: 20vh;
+  height: 18vh;
 }
 </style>

@@ -4,13 +4,13 @@
       <div class="col-12">
         <h1>
           Pokémon
-          <img alt="Vue logo" src="../assets/logo.png" />uer
+          <img alt="Vue logo" src="../assets/logo.png" style="height:18vh" />uer
         </h1>
       </div>
       <search class="col-12"></search>
     </div>
-    <div class="row">
-      <div class="col-12">
+    <div class="row d-flex justify-content-center">
+      <div class="col-6">
         <pokemon></pokemon>
       </div>
       <div class="col-12">
