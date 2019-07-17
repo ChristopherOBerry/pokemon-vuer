@@ -1,18 +1,44 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home container">
+    <div class="row">
+      <div class="col-12">
+        <h1>
+          Pokémon
+          <img alt="Vue logo" src="../assets/logo.png" />uer
+        </h1>
+      </div>
+      <search class="col-12"></search>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <pokemon></pokemon>
+      </div>
+      <div class="col-12">
+        <PokemonDetails></PokemonDetails>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import Search from "../components/Search";
+import Pokemon from "../components/Pokemon";
+import PokemonDetails from "@/components/PokemonDetails";
 
 export default {
-  name: 'home',
+  name: "home",
+  computed: {
+    pokemon() {
+      return this.$store.state.pokemon;
+    }
+  },
+
   components: {
-    HelloWorld
+    Search,
+    Pokemon,
+    PokemonDetails
   }
-}
+};
 </script>
