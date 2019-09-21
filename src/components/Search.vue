@@ -11,7 +11,11 @@
         v-model="query"
         style="width: 40vw;"
       />
-      <button class="btn btn-primary" type="submit">Search</button>
+      <button
+        style="background-color:lightgray;"
+        class="btn btn border border-primary m-1"
+        type="submit"
+      >Search</button>
     </form>
   </div>
 </template>

@@ -13,9 +13,6 @@
       <div class="col-6">
         <pokemon></pokemon>
       </div>
-      <div class="col-12">
-        <PokemonDetails></PokemonDetails>
-      </div>
     </div>
   </div>
 </template>
@@ -37,8 +34,10 @@ export default {
 
   components: {
     Search,
-    Pokemon,
-    PokemonDetails
+    Pokemon
   }
 };
 </script>
+
+<style scoped>
+</style>
